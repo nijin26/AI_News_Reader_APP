@@ -93,7 +93,11 @@ const NewsCards = (props) => {
             style={{ display: "flex" }}
           >
             {" "}
-            <NewsCard article={article} index={i} />{" "}
+            <NewsCard
+              article={article}
+              index={i}
+              activeArticles={props.activeArticles}
+            />{" "}
           </Grid>
         ))}
       </Grid>
